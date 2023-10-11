@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heart-container {
+    position: relative;
+    animation: heartbeat 1s infinite;
+    animation-duration: 1.3s;
+}
+
+.heart {
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.5);
+
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    40%{
+        transform: scale(1.6);
+    }
+    100%{
+        transform:scale(1) ;
+    }
+
+}
+
+
+
+
+
+
